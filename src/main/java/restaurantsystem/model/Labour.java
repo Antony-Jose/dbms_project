@@ -12,6 +12,10 @@ public class Labour {
         this.salary = salary;
     }
 
+    public Labour() {
+        //TODO Auto-generated constructor stub
+    }
+
     public String getId() {
         return id;
     }

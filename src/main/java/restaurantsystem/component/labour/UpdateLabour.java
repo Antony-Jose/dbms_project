@@ -3,6 +3,7 @@ package restaurantsystem.component.labour;
 
 
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import restaurantsystem.model.Labour;
 import restaurantsystem.service.LabourService;
 
@@ -153,7 +154,7 @@ public class UpdateLabour extends javax.swing.JFrame {
         String id = newLabourIDField.getText();
         String name = newLabourNameField.getText();
         double salary = Double.parseDouble(newLabourSalaryField.getText());
-
+        //SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(this, "Test: Button was clicked!"));
         if (sourceId.isEmpty() || id.isEmpty() || name.isEmpty() || newLabourSalaryField.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Field(s) cannot be left empty");
             return;

@@ -47,6 +47,8 @@ public class BillingHelper {
         return String.valueOf("Total Price is : " + totalPrice);
     }
 
+    
+
     private void openFile() {
         try {
             scan = new Scanner(new File("storage/order.txt"));
